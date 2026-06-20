@@ -18,7 +18,7 @@ export const Header = () => {
           ].map((item) => (
             <Link
               className="uppercase inline-block font-mono text-foreground/60 hover:text-foreground duration-150 transition-colors ease-out"
-              to={item.to}
+              to={`/${item.to}`}
               key={item.name}
             >
               {item.name}

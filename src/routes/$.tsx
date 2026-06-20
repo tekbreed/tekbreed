@@ -12,7 +12,7 @@ export default function NotFound() {
           The page you are looking for does not exist, or has been moved to another coordinate.
         </p>
 
-        <Link to="/" className="mt-12">
+        <Link to="/">
           <Button size="lg" className="px-8 font-mono cursor-pointer ">
             Return to Base
           </Button>
