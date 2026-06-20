@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { Header } from "~/components/header";
+import { Footer } from "~/components/footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -44,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Header />
         {children}
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>

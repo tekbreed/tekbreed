@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export const Header = () => {
   return (
-    <div className="fixed z-50 pt-8 md:pt-14  w-full items-center">
+    <div className="flex pt-8 md:pt-14  w-full items-center px-8 md:px-0">
       <header className="flex items-center justify-between container max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2">
         <img src="/images/logo.png" width={40} alt="TekBreed" />
