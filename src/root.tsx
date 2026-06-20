@@ -11,6 +11,26 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { Header } from "~/components/header";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "TekBreed" },
+    { name: "description", content: "Building and helping others build software." },
+    { name: "keywords", content: "AI Integration, Software Development, Custom Software, Tech, TekBreed" },
+    
+    // OpenGraph metadata
+    { property: "og:title", content: "TekBreed" },
+    { property: "og:description", content: "Building and helping others build software." },
+    { property: "og:type", content: "website" },
+    { property: "og:image", content: "/images/logo.png" },
+    
+    // Twitter Card metadata
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "TekBreed" },
+    { name: "twitter:description", content: "Building and helping others build software." },
+    { name: "twitter:image", content: "/images/logo.png" },
+  ];
+}
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
