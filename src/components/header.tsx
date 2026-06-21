@@ -11,6 +11,7 @@ export function Header() {
         </Link>
         <nav className="flex max-lg:hidden absolute left-1/2 -translate-x-1/2 top-3 items-center justify-center gap-x-10 h-10">
           {[
+            { name: "Products", to: "/#products" },
             { name: "Services", to: "/#services" },
             { name: "Contact Us", to: "/#contact" },
           ].map((item) => (
@@ -25,7 +26,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4 h-10">
           <a
-            href="https://github.com/tekbreed/tekbreed"
+            href="https://github.com/tekbreed"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/50 hover:text-primary transition-colors duration-200 max-lg:hidden flex items-center justify-center h-10 w-10"

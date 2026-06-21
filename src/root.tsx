@@ -16,19 +16,19 @@ import { Button } from "~/components/ui/button";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "TekBreed — Custom AI Agents & Enterprise Software" },
-    { name: "description", content: "We engineer autonomous AI agents, integrate advanced models, and build production-grade enterprise software for scaling organizations." },
+    { name: "description", content: "TekBreed builds AI systems and enterprise software — autonomous agents, private model integrations, and the production engineering that makes them scale." },
     { name: "keywords", content: "Custom AI Agents, AI Integration, Enterprise Software Engineering, Model Integration, AI Ops, Software Studio, TekBreed" },
     
     // OpenGraph metadata
     { property: "og:title", content: "TekBreed — Custom AI Agents & Enterprise Software" },
-    { property: "og:description", content: "We engineer autonomous AI agents, integrate advanced models, and build production-grade enterprise software for scaling organizations." },
+    { property: "og:description", content: "TekBreed builds AI systems and enterprise software — autonomous agents, private model integrations, and the production engineering that makes them scale." },
     { property: "og:type", content: "website" },
     { property: "og:image", content: "/images/logo.png" },
     
     // Twitter Card metadata
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "TekBreed — Custom AI Agents & Enterprise Software" },
-    { name: "twitter:description", content: "We engineer autonomous AI agents, integrate advanced models, and build production-grade enterprise software for scaling organizations." },
+    { name: "twitter:description", content: "TekBreed builds AI systems and enterprise software — autonomous agents, private model integrations, and the production engineering that makes them scale." },
     { name: "twitter:image", content: "/images/logo.png" },
   ];
 }
