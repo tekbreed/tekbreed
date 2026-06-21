@@ -89,15 +89,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <html lang="en" className="dark">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>System Error - TekBreed</title>
-        <Links />
-      </head>
-      <body className="min-h-svh bg-background text-foreground flex items-center justify-center p-4">
-        <div className="max-w-xl w-full text-center relative z-10">
+        <div className="mx-auto max-w-xl w-full text-center relative z-10 dark" >
           <span className="font-mono text-xs text-destructive tracking-widest uppercase block mb-3">// SYSTEM CORRUPTION DETECTED</span>
           <h1 className="text-6xl sm:text-7xl font-heading mb-6 tracking-tighter text-destructive">
             {message}
@@ -120,7 +112,5 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
             </Button>
           </a>
         </div>
-      </body>
-    </html>
   );
 }
