@@ -2,12 +2,12 @@
 const products = [
   {
     name: "TekMemo",
-    desc: "Open-source self-hosted collaborative document editor.",
+    desc: "Intelligent local-first memory for AI agents. Portable, versioned, and instantly available when the next session starts.",
     url: "https://docs.memo.tekbreed.com",
   },
   {
     name: "TekMemo Cloud",
-    desc: "The intelligent document platform for modern engineering teams.",
+    desc: "Hosted file-replica storage with automatic sync and backup, built for teams who prefer zero-maintenance cloud memory.",
     url: "https://memo.tekbreed.com",
   },
   
@@ -18,7 +18,7 @@ export function Hero() {
     <div className="flex flex-col min-h-svh justify-center container mx-auto relative z-10 px-4 md:px-0 py-32">
       <div className="text-center max-w-5xl mx-auto w-full px-4">
         <p className="font-mono text-lg sm:text-xl md:text-2xl text-foreground/80 text-balance leading-relaxed mb-16 max-w-lg mx-auto">
-          Building and helping others build software.
+          We engineer autonomous AI agents, integrate advanced models, and build production-grade software for scaling enterprises.
         </p>
 
         {/* Products Grid */}

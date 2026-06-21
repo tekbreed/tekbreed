@@ -1,4 +1,4 @@
-import { Mail, Globe } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -7,7 +7,7 @@ export function Contact() {
         <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-3">// 02. INQUIRIES</span>
         <h2 className="text-4xl md:text-5xl font-heading mb-8">Get In Touch</h2>
         <p className="font-mono text-sm text-foreground/60 leading-relaxed mb-16 max-w-125 mx-auto">
-          Ready to build something together? Reach out to our engineering team or AI integration advisory.
+          Ready to ship? Get in touch directly with our engineering team to discuss your AI or enterprise software roadmap.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -35,11 +35,11 @@ export function Contact() {
             <span className="absolute bottom-0 right-0 w-px h-2 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             <div className="inline-flex items-center justify-center p-3 bg-primary/10 text-primary mb-4">
-              <Globe size={20} />
+              <MapPin size={20} />
             </div>
             <span className="font-mono text-xs text-foreground/40 block mb-2">LOCATION</span>
-            <span className="font-mono text-lg text-foreground/80 block">
-              🤔
+            <span className="font-mono text-sm text-foreground/80 block">
+              Kaduna, Nigeria
             </span>
           </div>
         </div>

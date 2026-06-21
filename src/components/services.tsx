@@ -4,23 +4,23 @@ import { Cpu, Code2, Layers, Cloud } from "lucide-react";
 const servicesList = [
   {
     icon: Cpu,
-    title: "AI Integration",
-    desc: "Custom LLM integrations, RAG architectures, and agentic workflows tailored to optimize your operations."
-  },
-  {
-    icon: Code2,
-    title: "Custom Software",
-    desc: "End-to-end full-stack development focusing on performant, reliable, and scalable web and mobile systems."
+    title: "Custom AI Agents",
+    desc: "Autonomous multi-agent frameworks and goal-directed cognitive systems built to automate complex, decision-driven workflows."
   },
   {
     icon: Layers,
-    title: "UI/UX & Design Systems",
-    desc: "Engineering-led product design, interactive mockups, and unified design systems that elevate user experience."
+    title: "AI & Model Integration",
+    desc: "Connect proprietary LLMs, build custom RAG pipelines, and fine-tune domain-specific models for highly accurate business logic."
+  },
+  {
+    icon: Code2,
+    title: "Enterprise Consulting",
+    desc: "Modernize legacy code, audit software architectures, and design high-concurrency systems to scale enterprise loads without downtime."
   },
   {
     icon: Cloud,
-    title: "Cloud & DevOps",
-    desc: "Robust cloud infrastructure provisioning, containerized deployments, and automated CI/CD pipelines."
+    title: "AI Ops & Infrastructure",
+    desc: "Optimize inference latency, orchestrate GPU-accelerated cloud nodes, and deploy high-throughput scaling pipelines for production models."
   }
 ];
 
@@ -33,7 +33,7 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl font-heading">Our Services</h2>
         </div>
         <p className="font-mono text-sm text-foreground/50 max-w-100">
-          Engineered solutions bridging advanced AI integration, custom software architectures, and product design.
+          Production-grade engineering to deploy autonomous agents, integrate private models, and scale enterprise software.
         </p>
       </div>
 

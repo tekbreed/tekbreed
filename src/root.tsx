@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { Header } from "~/components/header";
 import { Footer } from "~/components/footer";
+import { Button } from "~/components/ui/button";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -57,6 +58,20 @@ export default function App() {
   return <Outlet />;
 }
 
+export function HydrateFallback() {
+  return (
+    <div className="min-h-svh flex items-center justify-center bg-background text-foreground">
+      <div className="flex flex-col items-center">
+        <div className="relative w-12 h-12 mb-4">
+          <div className="absolute inset-0 rounded-none border border-primary/20 animate-ping" />
+          <div className="absolute inset-0 rounded-none border border-primary animate-pulse" />
+        </div>
+        <p className="font-mono text-xs text-foreground/45 tracking-widest uppercase">// INITIALIZING MEMORY</p>
+      </div>
+    </div>
+  );
+}
+
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
@@ -74,14 +89,38 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
-    </main>
+    <html lang="en" className="dark">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>System Error - TekBreed</title>
+        <Links />
+      </head>
+      <body className="min-h-svh bg-background text-foreground flex items-center justify-center p-4">
+        <div className="max-w-xl w-full text-center relative z-10">
+          <span className="font-mono text-xs text-destructive tracking-widest uppercase block mb-3">// SYSTEM CORRUPTION DETECTED</span>
+          <h1 className="text-6xl sm:text-7xl font-heading mb-6 tracking-tighter text-destructive">
+            {message}
+          </h1>
+          <p className="font-mono text-sm text-foreground/60 leading-relaxed mb-8 max-w-md mx-auto">
+            {details}
+          </p>
+
+          {stack && (
+            <div className="mb-8 text-left bg-muted/30 border border-border/40 p-4 max-h-60 overflow-auto font-mono text-[10px] text-destructive/80 [clip-path:polygon(4px_0,100%_0,100%_calc(100%-4px),calc(100%-4px)_100%,0_100%,0_4px)]">
+              <pre className="whitespace-pre-wrap break-all">
+                <code>{stack}</code>
+              </pre>
+            </div>
+          )}
+
+          <a href="/" className="inline-block">
+            <Button size="lg" className="px-8 font-mono cursor-pointer">
+              Reboot System
+            </Button>
+          </a>
+        </div>
+      </body>
+    </html>
   );
 }
