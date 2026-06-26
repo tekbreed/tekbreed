@@ -4,7 +4,7 @@ const products = [
   {
     name: "TekQuoin",
     desc: "Direct, high-trust lessons on the core principles that dictate software behavior. Master the systems, math, and physics behind real-world code to build deep technical judgment.",
-    url: "https://tekquoin.com",
+    url: "https://quoin.tekbreed.com",
   },
   {
     name: "TekMemo",
