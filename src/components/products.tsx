@@ -2,6 +2,11 @@ import { CornerAccents } from "~/components/corner-accents";
 
 const products = [
   {
+    name: "TekQuoin",
+    desc: "Direct, high-trust lessons on the core principles that dictate software behavior. Master the systems, math, and physics behind real-world code to build deep technical judgment.",
+    url: "https://tekquoin.com",
+  },
+  {
     name: "TekMemo",
     desc: "Local-first memory for AI agents. Portable, versioned, and instantly available when the next session starts.",
     url: "https://docs.memo.tekbreed.com",
@@ -18,15 +23,15 @@ export function Products() {
     <section id="products" className="py-32 border-t border-border/20 container max-w-7xl mx-auto relative z-10 px-4 md:px-0">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
         <div>
-          <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-3">// 01. PRODUCTS</span>
-          <h2 className="text-4xl md:text-5xl font-heading">Products</h2>
+          <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-3">// 01. OUR PROJECTS</span>
+          <h2 className="text-4xl md:text-5xl font-heading">Listed Projects</h2>
         </div>
         <p className="font-mono text-sm text-foreground/50 max-w-md">
-          Our own tools, built from the same engineering we do for clients.
+          The platforms and tools built, owned, and operated by Tekbreed.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {products.map((p, idx) => (
           <a
             href={p.url}

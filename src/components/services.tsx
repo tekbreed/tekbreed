@@ -1,30 +1,16 @@
-import { Cpu, Layers, Code2, RefreshCw } from "lucide-react";
+import { Cpu, Layers } from "lucide-react";
 import { CornerAccents } from "~/components/corner-accents";
 
-// Two practices, mirrored across two pillars so the cards back up the hero:
-// AI systems (agents + integrations) and enterprise software (build + modernize).
 const servicesList = [
-  // ── AI systems ──────────────────────────────────────────────
-  {
-    icon: Cpu,
-    title: "Custom AI Agents",
-    desc: "Autonomous agents that take on complex, decision-driven work — research, drafting, multi-step operations — so your team stops being the bottleneck."
-  },
   {
     icon: Layers,
-    title: "AI & Model Integration",
-    desc: "We connect private models to your data and tools — RAG pipelines, fine-tuned domain models, and the glue that makes them accurate on your business logic."
-  },
-  // ── Enterprise software ─────────────────────────────────────
-  {
-    icon: Code2,
-    title: "Custom Software Engineering",
-    desc: "Web platforms, internal tools, and APIs built for production — the software your business runs on, engineered to hold up under real load."
+    title: "Enterprise Software Consultation",
+    desc: "Strategic advisory on system architecture, legacy modernization, and building production-grade platforms that scale with your enterprise."
   },
   {
-    icon: RefreshCw,
-    title: "Legacy Modernization & Scaling",
-    desc: "Modernize legacy systems, refactor brittle code, and re-architect for scale — so what you already have stops slowing you down."
+    icon: Cpu,
+    title: "AI & Agent Consultation",
+    desc: "Expert guidance on integrating private models, designing RAG pipelines, and deploying autonomous agents to handle complex, decision-driven workflows."
   }
 ];
 
@@ -33,11 +19,11 @@ export function Services() {
     <section id="services" className="py-32 border-t border-border/20 container max-w-7xl mx-auto relative z-10 px-4 md:px-0">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
         <div>
-          <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-3">// 02. CAPABILITIES</span>
+          <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-3">// 02. CONSULTATION</span>
           <h2 className="text-4xl md:text-5xl font-heading">Our Services</h2>
         </div>
         <p className="font-mono text-sm text-foreground/50 max-w-md">
-          Two practices under one roof — AI systems and enterprise software engineering — covering everything from agents and integrations to the systems they run on.
+          Specialized advisory for enterprise software and AI. We don't just write code; we help you architect systems that hold up under real load.
         </p>
       </div>
 
