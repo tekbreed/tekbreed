@@ -5,11 +5,11 @@ export function Hero() {
     <div className="flex flex-col min-h-svh justify-center container mx-auto relative z-10 px-4 md:px-0 py-32">
       <div className="text-center max-w-5xl mx-auto w-full">
         <span className="font-mono text-xs text-primary tracking-widest uppercase block mb-6">
-          // PARENT COMPANY & CONSULTATION STUDIO
+          // SYSTEMS & INTELLIGENCE ADVISORY
         </span>
 
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl tracking-tight text-balance leading-[1.05] mb-8">
-          Tekbreed
+          Designing systems. Scaling intelligence.
         </h1>
 
         <p className="font-mono text-base sm:text-lg text-foreground/70 text-balance leading-relaxed mb-12 max-w-2xl mx-auto">
